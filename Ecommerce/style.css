@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    margin-top: -15px;
+}
+
+h4 {
+    margin: 0 10px;
+    padding: 0;
+}
+
+img {
+    width: 90px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* WRAPPER */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper_titles, .wrapper_secondRowTitles, .offerteBF, .offerteBest {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper_titles h2, .wrapper_secondRowTitles h2 {
+    font-size: 2rem;
+}
+
+.wrapper_titles h4 {
+    font-size: 0.9rem;
+}
+
+.wrapper_products, .second_wrapper_products {
+    margin: 0 40px;
+    height: 45vh;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7.5px;
+    padding: 10px;
+  
+    min-width: 150px;
+    border-radius: 12px;
+  
+    cursor: pointer;
+    transition: all 0.35s;
+}
+  
+.product:hover {
+    transform: scale(0.9);
+    border: 2px solid var(--main_color);
+}
+  
+.product:active {
+    transform: scale(1);
+}
+  
+.product p {
+    align-self: flex-start;
+}
+
+/* FORM */
+
+.form {
+    width: 100%;
+    max-width: 990px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.form h2 {
+    text-align: center;
+    padding: auto;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.form .flex-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form .flex-form .inputDiv.larghezza100 {
+    width: 100%;
+}
+
+.form .flex-form .inputDiv {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.form .flex-form .inputDiv label {
+    display: block ;
+    text-align: left;
+    padding: 0 15px 10px;
+    font-size: 15px;
+}
+
+.form .flex-form .inputDiv input[type="text"],
+.form .flex-form .inputDiv input[type="email"], 
+.form .flex-form .inputDiv textarea,
+.form .flex-form .inputDiv select {
+    width: 100%;
+    display: block;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+}
+
+.form .flex-form .inputDiv textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* PULSANTE */
+
+.pulsante {
+    background: black;
+    border: 2px black solid;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(43, 42, 42); 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(7, 7, 7); 
+}
